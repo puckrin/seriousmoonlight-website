@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>Serious Moonlight</title>
+<meta name="description" content="Serious Moonlight, an independent software publisher.">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='4 16 40 20'%3E%3Cstyle%3E*%7Bfill:%231E1B16%7D@media(prefers-color-scheme:dark)%7B*%7Bfill:%23EDE7DA%7D%7D%3C/style%3E%3Cdefs%3E%3Cmask id='c'%3E%3Crect width='48' height='32' fill='%23fff'/%3E%3Ccircle cx='33' cy='32' r='12' fill='%23000'/%3E%3C/mask%3E%3C/defs%3E%3Ccircle cx='24' cy='32' r='16' mask='url(%23c)'/%3E%3Crect x='4' y='33.5' width='40' height='2.5'/%3E%3C/svg%3E">
+<style>
+:root {
+  --paper: #F6F2E9;
+  --ink: #1E1B16;
+  --muted: #6B6458;
+  --rule: #D9D2C3;
+  --serif: Charter, "Iowan Old Style", "Palatino Linotype", Georgia, serif;
+  --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --paper: #1A1814;
+    --ink: #EDE7DA;
+    --muted: #A39B8B;
+    --rule: #3A362D;
+  }
+}
+* { box-sizing: border-box; }
+html { background: var(--paper); }
+body {
+  margin: 0;
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  padding: 0 24px;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--serif);
+  line-height: 1.5;
+}
+main, footer {
+  width: 100%;
+  max-width: 40rem;
+  margin: 0 auto;
+}
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 4rem 0 3rem;
+}
+.mark { display: block; width: 3.5rem; height: auto; margin: 0 0 1.5rem; }
+h1 {
+  margin: 0;
+  font-size: clamp(2rem, 7vw, 3rem);
+  font-weight: 400;
+  line-height: 1.1;
+  letter-spacing: -0.01em;
+}
+.line {
+  margin: 1rem 0 0;
+  font-size: clamp(1.0625rem, 3vw, 1.25rem);
+}
+footer {
+  padding: 1rem 0 2rem;
+  border-top: 1px solid var(--rule);
+  color: var(--muted);
+  font-family: var(--sans);
+  font-size: 0.8125rem;
+  line-height: 1.6;
+}
+footer p { margin: 0; }
+footer .what { margin-bottom: 0.5rem; }
+</style>
+</head>
+<body>
+<main>
+  <svg class="mark" viewBox="4 16 40 20" aria-hidden="true" focusable="false">
+    <defs>
+      <mask id="cut">
+        <rect width="48" height="32" fill="#fff"/>
+        <circle cx="33" cy="32" r="12" fill="#000"/>
+      </mask>
+    </defs>
+    <circle cx="24" cy="32" r="16" fill="currentColor" mask="url(#cut)"/>
+    <rect x="4" y="33.5" width="40" height="2.5" fill="currentColor"/>
+  </svg>
+  <h1>Serious Moonlight</h1>
+  <p class="line">Know when to stay in. Get things done.</p>
+  <!-- v2: a short list of project links goes here -->
+</main>
+<footer>
+  <p class="what">Independent software publisher.</p>
+  <p>Shaun Puckrin, trading as Serious Moonlight</p>
+  <p>Lytchett House, 13 Freeland Park, Wareham Road, Poole, Dorset, BH16 6FA</p>
+</footer>
+</body>
+</html>

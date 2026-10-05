@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="4 16 40 20" role="img" aria-label="Serious Moonlight">
+  <defs>
+    <mask id="cut">
+      <rect width="48" height="32" fill="#fff"/>
+      <circle cx="33" cy="32" r="12" fill="#000"/>
+    </mask>
+  </defs>
+  <circle cx="24" cy="32" r="16" fill="currentColor" mask="url(#cut)"/>
+  <rect x="4" y="33.5" width="40" height="2.5" fill="currentColor"/>
+</svg>
