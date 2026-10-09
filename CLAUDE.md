@@ -6,8 +6,10 @@ umbrella, not a product page.
 
 **v1 scope: one bare-bones page** — name, a line of copy, a descriptor, and the legal
 disclosure in the footer. No multi-page site, blog, CMS or component library.
-**v2, later:** short list of links out to the project sites (Bellows, Taneleer, Tidemarq).
-Keep v1 easy to extend; don't build the list mechanism yet. This site does not style
+**v2 (started 2026-10-09):** a plain list of links out to live project sites — currently
+Taneleer and Tidemarq; Bellows to follow once bellows.fit is up. It is a hand-written
+`<ul class="projects">`, one `<li>` per project with a one-line description. No data file,
+no templating. This site does not style
 itself after any project's identity.
 
 ## The footer is load-bearing
