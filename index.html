@@ -76,6 +76,15 @@ ul.projects {
 }
 .projects a:hover, .projects a:focus-visible { text-decoration-thickness: 2px; }
 .projects p { margin: 0.125rem 0 0; color: var(--muted); font-size: 0.9375rem; }
+h2.soon {
+  margin: 2rem 0 0;
+  color: var(--muted);
+  font-family: var(--sans);
+  font-size: 0.8125rem;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+}
+.soon + .projects { margin-top: 1rem; }
 footer {
   padding: 1rem 0 2rem;
   border-top: 1px solid var(--rule);
@@ -111,7 +120,14 @@ footer .what { margin-bottom: 0.5rem; }
       <a href="https://tidemarq.app">Tidemarq</a>
       <p>Self-hosted directory sync with a web interface. Runs on your own hardware.</p>
     </li>
-    <!-- add further projects as li items -->
+  </ul>
+  <h2 class="soon">Coming soon</h2>
+  <ul class="projects">
+    <li>
+      <a href="https://bellows.fit">Bellows</a>
+      <p>Interval timer for iPhone. Free, no ads, no account.</p>
+    </li>
+    <!-- add further projects as li items; move to the list above when released -->
   </ul>
 </main>
 <footer>
